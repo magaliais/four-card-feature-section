@@ -18,7 +18,7 @@ The users should:
 
 ## To-do list
 
-- [x] Add responsive feature for Desktop version;
+- [ ] Add responsive feature for Desktop version;
 
 <br>
 
