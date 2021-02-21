@@ -1,0 +1,112 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: var(--very-dark-blue);
+}
+
+:root {
+    font-family: 'Poppins', sans-serif;
+
+    /* variables */
+
+    /* colors */
+        /* primary */
+        --red: hsl(0, 78%, 62%);
+        --cyan: hsl(180, 62%, 55%);
+        --orange: hsl(34, 97%, 64%);
+        --blue: hsl(212, 86%, 64%);
+    
+        /* neutral */
+        --very-dark-blue: hsl(234, 12%, 34%);
+        --grayish-blue: hsl(229, 6%, 66%);
+        --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--very-light-gray);
+}
+
+
+
+/* Header ============================= */
+body > header {
+    margin: 5rem 1rem;
+    text-align: center;
+
+    font-size: 13px;
+}
+
+body > header > h1 {
+    font-weight: 200;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+/* Container ========================== */
+main {
+    display: grid;
+
+    grid-template-rows: 4fr;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    margin: 0 2rem 3rem;
+}
+
+
+/* Card =============================== */
+.card {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+
+    height: 30vh;
+
+    padding: 1.5rem 2rem 0;
+
+    background-color: #fff;
+
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card > img {
+
+    align-self: flex-end;
+    justify-self: end;
+
+    margin-top: 0.5rem;
+}
+
+/* card top colors ===================== */
+
+main .card:nth-child(1) {
+    border-top: 4px solid var(--cyan);
+}
+
+main .card:nth-child(2) {
+    border-top: 4px solid var(--red);
+}
+
+main .card:nth-child(3) {
+    border-top: 4px solid var(--orange);
+}
+
+main .card:nth-child(4) {
+    border-top: 4px solid var(--blue);
+}
+
+/* footer ============================= */
+footer {
+    margin-bottom: 2rem;
+}
